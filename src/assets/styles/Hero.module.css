@@ -1,0 +1,14 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #000000, #111111);
+  color: white;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.name {
+  color: #00ffff;
+}
