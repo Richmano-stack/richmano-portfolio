@@ -3,15 +3,17 @@ import styles from '../assets/styles/Navbar.module.css';
 
 const Navbar = () => {
   return (
-    <nav className={styles.navbar}>
-      <h1 className={styles.logo}>Richmano NASY</h1>
-      <ul className={styles.menu}>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Gallery</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <header className={styles.navbar}>
+      <div className={styles.logo}>
+        <span className={styles.brand}>Richmano NASY</span>
+      </div>
+      <nav className={styles.navLinks}>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
   );
 };
 

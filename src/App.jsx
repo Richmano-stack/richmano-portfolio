@@ -2,20 +2,24 @@ import React from 'react';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import DevSkills from './components/DevSkills';
-import DesignGallery from './components/DesignGallery';
+import ProjectGallery from './components/ProjectGallery';
 import ContactForm from './components/ContactForm';
 import './assets/styles/global.css';
+import Footer from "./components/Footer";
+import MouseFollower from './components/MouseFollower';
 
-const App = () => {
+function App() {
   return (
-    <div className="App">
+    <>
+      <MouseFollower />
       <Navbar />
       <Hero />
       <DevSkills />
-      <DesignGallery />
+      <ProjectGallery />
       <ContactForm />
-    </div>
+      <Footer />
+    </>
   );
-};
+}
 
 export default App;

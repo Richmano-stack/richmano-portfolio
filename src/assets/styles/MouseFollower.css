@@ -1,0 +1,30 @@
+#cursor-dot,
+#cursor-outline {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  mix‑blend‑mode: difference; /* optional for dark background look */
+}
+
+#cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: #00ffd1;
+}
+
+#cursor-outline {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(0, 255, 209, 0.7);
+  transition: width 0.2s ease, height 0.2s ease, border 0.2s ease;
+}
+
+/* On hover, expand the outline */
+a:hover ~ #cursor-outline,
+button:hover ~ #cursor-outline {
+  width: 60px !important;
+  height: 60px !important;
+  border-color: #00ffd1 !important;
+}

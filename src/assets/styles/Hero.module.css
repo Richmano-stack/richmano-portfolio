@@ -1,14 +1,50 @@
 .hero {
-  height: 100vh;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  background: linear-gradient(to bottom right, #000000, #111111);
-  color: white;
-  text-align: center;
-  padding: 0 1rem;
+  padding: 6rem 3rem;
+  background-color: #0f0f0f;
+  min-height: 100vh;
 }
 
-.name {
-  color: #00ffff;
+.left {
+  max-width: 800px;
+  color: #fff;
+}
+
+.subtleName {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.subtleName span {
+  font-weight: 400;
+  color: #ccc;
+}
+
+.description {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  margin-top: 2rem;
+  color: #ccc;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 3rem;
+  background: #00ffe0;
+  color: #000;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background: #00c9ba;
+  color: #fff;
 }

@@ -1,18 +1,30 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import styles from '../assets/styles/Hero.module.css';
 import AnimatedText from './AnimatedText';
+import styles from '../assets/styles/Hero.module.css';
 
 const Hero = () => {
   return (
     <section className={styles.hero}>
       <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+        className={styles.left}
+        initial={{ x: -80, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.9, ease: 'easeOut' }}
       >
-        <h1>Hi, I'm <span className={styles.name}>Richmano NASY</span></h1>
-        <AnimatedText text="Front-End Developer | UI Enthusiast | React Addict" />
+        <p className={styles.subtleName}>Hi, I’m <span>Richmano NASY</span></p>
+
+        <AnimatedText
+          text="Front‑End Developer • React • GSAP • Three.js • Framer Motion"
+        />
+
+        <p className={styles.description}>
+          I build fast, accessible, and animated web experiences using cutting-edge JavaScript tools. Passionate about React, motion design, creative coding, and crafting immersive user interfaces that feel alive.
+        </p>
+
+        <a href="#projects" className={styles.cta}>
+          View My Work ↓
+        </a>
       </motion.div>
     </section>
   );
