@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import AnimatedText from './AnimatedText';
+import Typewriter from './Typewriter';
 import styles from '../assets/styles/Hero.module.css';
 
 const Hero = () => {
@@ -10,20 +10,25 @@ const Hero = () => {
         className={styles.left}
         initial={{ x: -80, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.9, ease: 'easeOut' }}
+        transition={{ duration: 1.2, ease: 'easeOut' }}
       >
-        <p className={styles.subtleName}>Hi, I’m <span>Richmano NASY</span></p>
+        <h1 className={styles.bigText}>
+          Hey, I'm <span className={styles.name}>Richmano NASY</span>
+        </h1>
 
-        <AnimatedText
-          text="Front‑End Developer • React • GSAP • Three.js • Framer Motion"
-        />
+        <h2 className={styles.subText}>
+          Web Developer • Designer • Innovator • Creator
+        </h2>
 
-        <p className={styles.description}>
-          I build fast, accessible, and animated web experiences using cutting-edge JavaScript tools. Passionate about React, motion design, creative coding, and crafting immersive user interfaces that feel alive.
-        </p>
+        <div className={styles.typing}>
+          <Typewriter
+            text="I build fast, accessible, and animated web experiences using cutting-edge JavaScript tools. Passionate about React, motion design, creative coding, and crafting immersive user interfaces that feel alive."
+            speed={25}
+          />
+        </div>
 
         <a href="#projects" className={styles.cta}>
-          View My Work ↓
+          Explore My Work ↓
         </a>
       </motion.div>
     </section>

@@ -1,50 +1,59 @@
 .hero {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 6rem 3rem;
-  background-color: #0f0f0f;
   min-height: 100vh;
+  background: linear-gradient(160deg, #0f0f0f 0%, #000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5rem 3rem;
+  color: #ffffff;
 }
 
 .left {
-  max-width: 800px;
-  color: #fff;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.subtleName {
-  font-size: 1.4rem;
-  font-weight: 300;
-  color: #aaa;
+.bigText {
+  font-size: 4rem;
+  line-height: 1.2;
+  color: #00ffe0;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
 
-.subtleName span {
-  font-weight: 400;
-  color: #ccc;
+.name {
+  color: #ff00c8;
+  font-weight: 600;
 }
 
-.description {
-  font-size: 1.8rem;
-  line-height: 1.7;
-  margin-top: 2rem;
-  color: #ccc;
+.subText {
+  font-size: 2rem;
+  color: #ffffffcc;
+  font-family: 'Rajdhani', sans-serif;
+  margin-bottom: 2rem;
+}
+
+.typing {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  max-width: 800px;
 }
 
 .cta {
   display: inline-block;
-  margin-top: 3rem;
-  background: #00ffe0;
-  color: #000;
   padding: 1rem 2rem;
-  border-radius: 8px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
-  transition: all 0.3s ease;
+  color: #000;
+  background-color: #00ffe0;
+  border-radius: 6px;
   text-decoration: none;
+  transition: background 0.3s ease;
 }
 
 .cta:hover {
-  background: #00c9ba;
-  color: #fff;
+  background-color: #00e6cc;
+  transform: translateY(-2px);
 }

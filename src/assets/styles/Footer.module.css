@@ -1,47 +1,133 @@
 .footer {
-  background-color: #111;
-  color: #aaa;
-  padding: 3rem 2rem 1rem;
-  font-size: 0.95rem;
+  background-color: #0c0c0c;
+  color: #ccc;
+  padding: 4rem 2rem 2rem;
+  font-family: 'Rajdhani', sans-serif;
+  position: relative;
+  z-index: 10;
 }
 
-.content {
+.container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
   max-width: 1300px;
-  margin: 0 auto 2rem;
+  margin: auto;
 }
 
-.left h3,
-.right h3 {
-  color: #00ffcc;
+.column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.column h3 {
+  font-size: 1.3rem;
+  color: #00ffff;
   margin-bottom: 1rem;
+  text-shadow: 0 0 6px #00ffff;
 }
 
-.right ul {
+.column ul {
   list-style: none;
   padding: 0;
 }
 
-.right li {
-  margin-bottom: 0.5rem;
-}
-
-.right a {
-  color: #aaa;
+.column ul li a {
+  color: #ccc;
   text-decoration: none;
-  transition: 0.3s;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  transition: color 0.3s ease;
 }
 
-.right a:hover {
-  color: #00ffcc;
+.column ul li a:hover {
+  color: #00ffff;
 }
 
-.bottom {
+.column p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.socials a {
+  color: #ccc;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #00ffff;
+}
+
+.newsletterForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletterForm input {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+  margin-bottom: 0.8rem;
+}
+
+.newsletterForm button {
+  background-color: #00ffff;
+  border: none;
+  padding: 0.5rem;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px #00ffff, 0 0 15px #00ffff50;
+}
+
+.newsletterForm button:hover {
+  background-color: #00cccc;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+.bottomBar {
+  margin-top: 3rem;
   text-align: center;
-  color: #666;
+}
+
+.glowLine {
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(90deg, #00ffe0, #ff00d4);
+  box-shadow: 0 0 8px #00ffe0;
+  margin-bottom: 1rem;
+}
+
+.bottomBar p {
   font-size: 0.85rem;
-  border-top: 1px solid #333;
-  padding-top: 1rem;
+  color: #777;
+}
+
+/* Scroll to top button */
+.scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: transparent;
+  border: 2px solid #00ffff;
+  padding: 10px;
+  border-radius: 50%;
+  color: #00ffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 20;
+  box-shadow: 0 0 10px #00ffff50;
+}
+
+.scrollTop:hover {
+  background-color: #00ffff;
+  color: #000;
+  box-shadow: 0 0 15px #00ffff;
 }

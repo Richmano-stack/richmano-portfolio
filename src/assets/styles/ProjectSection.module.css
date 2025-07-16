@@ -1,0 +1,135 @@
+.projectsSection {
+  padding: 5rem 2rem;
+  background: #0e0e0e;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.projectsSection h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.filterButtons {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.filterButtons button {
+  margin: 0 0.5rem;
+  background: transparent;
+  border: 2px solid #0ff;
+  color: #0ff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filterButtons .active,
+.filterButtons button:hover {
+  background: #0ff;
+  color: #000;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.projectCard {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid #0ff3;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  background-color: #111;
+  aspect-ratio: 1 / 1;
+}
+
+.projectCard:hover {
+  transform: scale(1.05);
+}
+
+.projectCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0ff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.projectCard:hover .overlay {
+  opacity: 1;
+  backdrop-filter: blur(4px);
+}
+
+.projectCard h4 {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #0ff;
+}
+
+/* Modal */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalContent {
+  background: #111;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  color: white;
+  animation: fadeInUp 0.4s ease-out;
+}
+
+.modalContent img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.modalContent button {
+  background: #0ff;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 4px;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
