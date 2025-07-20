@@ -1,0 +1,21 @@
+.connectSection {
+  background: #0c0c0c;;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.text {
+  font-size: 2.5rem;
+  color: #00ffe0;
+  font-family: 'Orbitron', 'Poppins', sans-serif;
+  text-shadow: 0 0 12px #d400ff66;
+  max-width: 1000px;
+  margin: auto;
+  line-height: 1.4;
+}
+
+.text span {
+  color: #ff00d4;
+  display: block;
+  margin-top: 1rem;
+}

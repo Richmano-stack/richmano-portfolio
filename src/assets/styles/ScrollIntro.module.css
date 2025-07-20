@@ -1,0 +1,15 @@
+.scrollIntro {
+  max-width: 800px;
+  margin: 6rem auto 4rem auto;
+  padding: 0 1rem;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 300;
+  color: var(--primary-text, #f0f0f0);
+  font-family: "Orbitron", "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+  background: linear-gradient(to right, #0fffc1, #6e0dd0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

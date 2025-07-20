@@ -5,6 +5,8 @@ import './assets/styles/global.css';
 import Footer from "./components/Footer";
 import MouseFollower from './components/MouseFollower';
 import Projects from './components/Projects';
+import ScrollIntro from "./components/ScrollIntro";
+import ConnectIntro from './components/ConnectIntro';
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
       <MouseFollower />
       <Navbar />
       <Hero />
+      <ScrollIntro />
       <Projects />
+      <ConnectIntro />
       <Footer />
     </>
   );

@@ -8,6 +8,7 @@ import {
   FaWhatsapp,
   FaArrowUp
 } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -23,9 +24,14 @@ const Footer = () => {
   };
 
   return (
-    <footer className={styles.footer}>
+    <motion.footer
+      className={styles.footer}
+      initial={{ opacity: 0, y: 80 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+    >
       <div className={styles.container}>
-
         <div className={styles.column}>
           <h3>Quick Links</h3>
           <ul>
@@ -70,7 +76,7 @@ const Footer = () => {
       <button className={styles.scrollTop} onClick={scrollToTop}>
         <FaArrowUp />
       </button>
-    </footer>
+    </motion.footer>
   );
 };
 

@@ -22,7 +22,7 @@ const Hero = () => {
 
         <div className={styles.typing}>
           <Typewriter
-            text="I build fast, accessible, and animated web experiences using cutting-edge JavaScript tools. Passionate about React, motion design, creative coding, and crafting immersive user interfaces that feel alive."
+            text="I  build fast, accessible, and animated web experiences using cutting-edge JavaScript tools. Passionate about React, motion design, creative coding, and crafting immersive user interfaces that feel alive."
             speed={25}
           />
         </div>

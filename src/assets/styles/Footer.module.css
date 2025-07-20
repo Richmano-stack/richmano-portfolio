@@ -2,7 +2,7 @@
   background-color: #0c0c0c;
   color: #ccc;
   padding: 4rem 2rem 2rem;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Orbitron', 'Poppins', sans-serif;
   position: relative;
   z-index: 10;
 }
@@ -23,9 +23,12 @@
 
 .column h3 {
   font-size: 1.3rem;
-  color: #00ffff;
+  color: #0fffc1;
   margin-bottom: 1rem;
-  text-shadow: 0 0 6px #00ffff;
+  text-shadow:
+    0 0 6px #0fffc1cc,
+    0 0 12px #d400ff99;
+  letter-spacing: 0.05em;
 }
 
 .column ul {
@@ -34,20 +37,25 @@
 }
 
 .column ul li a {
-  color: #ccc;
+  color: #aaa;
   text-decoration: none;
   margin-bottom: 0.5rem;
   display: inline-block;
   transition: color 0.3s ease;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.95rem;
 }
 
 .column ul li a:hover {
-  color: #00ffff;
+  color: #0fffc1;
+  text-shadow: 0 0 6px #0fffc1;
 }
 
 .column p {
   font-size: 0.95rem;
   line-height: 1.5;
+  color: #bbb;
+  text-shadow: 0 0 4px #0fffc177;
 }
 
 .socials a {
@@ -58,7 +66,8 @@
 }
 
 .socials a:hover {
-  color: #00ffff;
+  color: #d400ff;
+  text-shadow: 0 0 8px #d400ff99;
 }
 
 .newsletterForm {
@@ -67,28 +76,42 @@
 }
 
 .newsletterForm input {
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1rem;
   border: none;
-  background: #1a1a1a;
-  color: #fff;
+  background: #141414;
+  color: #f0f0f0;
   border: 1px solid #333;
   margin-bottom: 0.8rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.95rem;
+  border-radius: 6px;
+}
+
+.newsletterForm input:focus {
+  outline: none;
+  border-color: #0fffc1;
+  box-shadow: 0 0 8px #0fffc1aa;
 }
 
 .newsletterForm button {
-  background-color: #00ffff;
+  background-color: #0fffc1;
   border: none;
-  padding: 0.5rem;
+  padding: 0.6rem;
   color: #000;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 0 5px #00ffff, 0 0 15px #00ffff50;
+  box-shadow: 0 0 10px #0fffc1, 0 0 25px #d400ff55;
+  border-radius: 6px;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .newsletterForm button:hover {
-  background-color: #00cccc;
-  box-shadow: 0 0 10px #00ffff;
+  background-color: #0ee6bb;
+  box-shadow: 0 0 20px #0fffc1cc, 0 0 30px #d400ff88;
+  color: #000;
 }
 
 .bottomBar {
@@ -99,14 +122,16 @@
 .glowLine {
   height: 2px;
   width: 100%;
-  background: linear-gradient(90deg, #00ffe0, #ff00d4);
-  box-shadow: 0 0 8px #00ffe0;
+  background: linear-gradient(90deg, #0fffc1, #d400ff);
+  box-shadow: 0 0 8px #0fffc1, 0 0 12px #d400ff;
   margin-bottom: 1rem;
 }
 
 .bottomBar p {
   font-size: 0.85rem;
   color: #777;
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: 0.03em;
 }
 
 /* Scroll to top button */
@@ -114,20 +139,29 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: transparent;
-  border: 2px solid #00ffff;
-  padding: 10px;
+  background: #0c0c0c;
+  border: 2px solid #0fffc1;
+  padding: 12px;
   border-radius: 50%;
-  color: #00ffff;
-  font-size: 1.2rem;
+  color: #0fffc1;
+  font-size: 1.3rem;
   cursor: pointer;
   transition: all 0.3s ease;
   z-index: 20;
-  box-shadow: 0 0 10px #00ffff50;
+  box-shadow: 0 0 12px #0fffc155, 0 0 20px #d400ff33;
 }
 
 .scrollTop:hover {
-  background-color: #00ffff;
+  background-color: #0fffc1;
   color: #000;
-  box-shadow: 0 0 15px #00ffff;
+  box-shadow: 0 0 18px #0fffc1cc, 0 0 25px #d400ff99;
+}
+.footer {
+  background: linear-gradient(160deg, #0f0f0f 0%, #1a001f 100%);
+  color: #ccc;
+  padding: 4rem 2rem 2rem;
+  font-family: 'Orbitron', 'Poppins', sans-serif;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 -5px 15px #d400ff33;
 }
