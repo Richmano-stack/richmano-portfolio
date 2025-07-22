@@ -1,92 +1,81 @@
+/* Hero.module.css */
 .hero {
+  padding: 5rem 2rem;
   min-height: 100vh;
-  background: linear-gradient(160deg, #0c0c0c 0%, #000000 100%);
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding: 5rem 3rem;
-  color: #f0f0f0;
-  font-family: "Orbitron", "Poppins", sans-serif;
-  overflow: hidden;
+  background: #0a0a0a;
+  color: #00fff7;
 }
 
 .left {
-  max-width: 1000px;
-  margin: auto;
+  max-width: 800px;
 }
 
 .bigText {
-  font-size: 4rem;
+  font-size: 3.5rem;
+  font-weight: 800;
   line-height: 1.2;
   color: #0fffc1;
-  font-family: "Orbitron", sans-serif;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  text-shadow:
-    0 0 8px #0fffc1aa,
-    0 0 20px #0fffc1cc,
-    0 0 30px #d400ffcc;
-  letter-spacing: 0.05em;
+  text-shadow: 0 0 8px #0fffc1;
 }
 
 .name {
-  color: #d400ff;
-  font-weight: 700;
-  text-shadow:
-    0 0 6px #d400ffcc,
-    0 0 15px #d400ffee;
-  letter-spacing: 0.1em;
+  color: #f700ff;
+  text-shadow: 0 0 10px #f700ff;
 }
 
 .subText {
-  font-size: 2rem;
-  color: #aaaabbcc;
-  font-family: "Rajdhani", sans-serif;
-  margin-bottom: 2rem;
-  text-shadow:
-    0 0 3px #0fffc1aa,
-    0 0 6px #d400ff66;
-  letter-spacing: 0.03em;
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  color: #ccc;
 }
 
 .typing {
-  font-size: 1.3rem;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  color: #aaa;
   line-height: 1.6;
-  margin-bottom: 3rem;
-  max-width: 800px;
-  color: #ccc;
-  text-shadow:
-    0 0 4px #0fffc177,
-    0 0 8px #d400ff77;
 }
 
 .cta {
   display: inline-block;
-  padding: 1rem 2.5rem;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #0c0c0c;
-  background-color: #0fffc1;
-  border-radius: 12px;
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  background-color: transparent;
+  border: 2px solid #00fff7;
+  color: #00fff7;
+  font-weight: bold;
   text-decoration: none;
-  box-shadow:
-    0 0 10px #0fffc1,
-    0 0 20px #d400ff88;
-  transition: 
-    background 0.3s ease,
-    box-shadow 0.3s ease,
-    transform 0.3s ease;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  font-family: "Orbitron", "Poppins", sans-serif;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
 .cta:hover {
-  background-color: #0ee6bb;
-  box-shadow:
-    0 0 25px #0fffc1,
-    0 0 40px #d400ff;
-  transform: translateY(-3px);
-  color: #0c0c0c;
-  text-decoration: none;
+  background-color: #00fff7;
+  color: #000;
+}
+
+/* 💡 Mobile responsiveness */
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  .bigText {
+    font-size: 2rem;
+  }
+
+  .subText {
+    font-size: 1rem;
+  }
+
+  .typing {
+    font-size: 0.9rem;
+  }
+
+  .cta {
+    margin: 2rem auto 0;
+  }
 }
